@@ -1,0 +1,14 @@
+# Requirements for Local Development (PC)
+# Use this instead of the Pi requirements.txt when testing locally
+
+flask==3.0.0
+flask-cors==4.0.0
+opencv-python==4.8.1.78
+numpy==1.24.3
+psutil==5.9.6
+Pillow==10.1.0
+
+# Note: We intentionally skip these for local dev:
+# - ultralytics (replaced by mock_camera.MockYOLO)
+# - picamera2 (replaced by mock_camera.Picamera2)
+# These only work on Raspberry Pi
